@@ -151,7 +151,11 @@ redisearch-service-1  | INFO:     Application startup complete.
 
 🧪 Health Check
 
-Once running:curl http://localhost:8090/v1/redisearch/users
+Once running:
+curl -s http://localhost:8090/health | jq
+		or
+Use browser: http://localhost:8090/health
+
 
 🧱 Future Enhancements
 	•	Add q parameter for free-text search
